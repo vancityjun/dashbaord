@@ -26,6 +26,7 @@
     "eject": "react-scripts eject",
     "auto-fix": "npx eslint ./ --fix",
     "format-all": "npx prettier --write .",
+    "format-style": "npx stylelint '**/*.scss' --fix",
     "prepare": "husky install"
   },
   "eslintConfig": {
@@ -55,7 +56,10 @@
     "eslint-plugin-react": "^7.30.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "2.7.1"
+    "prettier": "2.7.1",
+    "stylelint": "^14.11.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^5.0.0"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
