@@ -17,7 +17,6 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "linterOptions": { "reportUnusedDisableDirectives": true },
   "rules": {
     "indent": [
       "error",
@@ -35,7 +34,6 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error"],
-    "no-debugger": ["error", "always"],
     "eqeqeq": "error",
     "no-console": "error",
     "no-alert": "error",
@@ -64,7 +62,7 @@
     "prefer-object-spread": "warn",
     "require-await": "warn",
     "spaced-comment": ["error", "always"],
-    "array-bracket-newline": ["error", "consistent", { "multiline": true }],
+    "array-bracket-newline": ["error", { "multiline": true }],
     "array-bracket-spacing": ["error", "never"],
     "arrow-spacing": "error",
     "block-spacing": "error",
