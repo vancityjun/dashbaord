@@ -28,37 +28,47 @@ img {
 }
 
 .logIn{
-  width: 375px;
-  height: 254px;
+  width: 420px;
   background-color: white;
   margin: 0 auto;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
+  -ms-transform: translateY(50%);
+  margin-top: 20%;
 }
 
 .divInsideLogIn{
   position: relative;
-  width: 215px;
+  width: 250px;
+  padding: 15% 0 10% 0;
   margin: 0 auto;
   top: 10%;
 }
 
-.logIn input{
+.divInsideSignIn{
+  position: relative;
+  width: 250px;
+  padding: 15% 0;
+  margin: 0 auto;
+  top: 10%;
+}
+
+.logIn input, .signUp input{
   width: 100%;
-  height: 33px;
+  height: 30px;
   border-bottom: 1px solid black;
   margin-bottom: 15px;
 }
 
-.logIn .inputName{
+.logIn .inputName, .email, .pw, .pwConfirm{
   text-align: left;
   color: #6D6D6D;
   font-size: small;
 }
 
-.logIn button{
-  width: 72px;
-  height: 26px;
+.logIn button, .signUp button{
+  width: 80px;
+  height: 30px;
   background-color: #152F8B;
   color: white;
   margin: 15px 0;
@@ -71,4 +81,43 @@ img {
   color: #E44933;
   font-size: small;
   cursor: pointer;
+}
+
+.signInPara{
+  color: #6D6D6D;
+  font-size: small;
+  cursor: pointer;
+}
+
+.signInPara span{
+  color: #E44933;
+  margin-left: 10px;
+}
+
+.signUp{
+  width: 420px;
+  // height: 254px;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 17%;
+}
+
+.agreeDiv{
+  display: flex;
+  
+}
+
+.agreeTerm{
+  text-align: left;
+  color: #585858;
+  font-size: small;
+  width: 120%;
+}
+
+.agreeTermCheck{
+  transform: scale(0.5);
+  margin-left: -160px;
+  margin-top: -6px;
 }
