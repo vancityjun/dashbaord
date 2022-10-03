@@ -1,8 +1,15 @@
 /* eslint-disable indent */
-import React from 'react';
+import React, {useState} from 'react';
 import '../App.scss';
+import SignIn from './SignIn';
 
 function SignUp() {
+    const [toSignIn, setToSignIn] = useState(false);
+    // eslint-disable-next-line space-before-blocks
+    if (toSignIn){
+        return <SignIn />;
+    }
+
     return <>
         <div className='signUp'>
             <div className='divInsideSignIn'>
@@ -17,7 +24,7 @@ function SignUp() {
                     <input className='agreeTermCheck' name='agreeTermCheck' type='checkbox' />
                 </div>
                 <button>Sign up</button>
-                <p className='signInPara'>already have an account?<span>sign in</span></p>
+                <p className='signInPara'>already have an account?<span onClick={() => setToSignIn(true)}>Sign in</span></p>
             </div>
         </div>
     </>;
