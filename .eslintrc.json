@@ -24,9 +24,6 @@
       {
         "SwitchCase": 1,
         "VariableDeclarator": "first",
-        "FunctionDeclaration": { "parameters": "first" },
-        "FunctionExpression": { "parameters": "first" },
-        "CallExpression": { "arguments": "first" },
         "ArrayExpression": 1,
         "ObjectExpression": 1
       }
@@ -90,9 +87,12 @@
     "no-multiple-empty-lines": ["error", { "max": 1 }],
     "no-trailing-spaces": "error",
     "no-whitespace-before-property": "error",
-    "object-curly-spacing": "error",
+    "object-curly-spacing": ["error", "always"],
     "space-before-blocks": "error",
-    "space-before-function-paren": ["error", "never"],
+    "space-before-function-paren": [
+      "error",
+      { "anonymous": "always", "named": "never", "asyncArrow": "always" }
+    ],
     "space-in-parens": ["error", "never"],
     "space-infix-ops": "error",
     "switch-colon-spacing": "error",
