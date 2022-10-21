@@ -25,7 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "auto-fix": "npx eslint ./ --fix",
-    "format-all": "npx prettier --write ."
+    "format-all": "npx prettier --write .",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
